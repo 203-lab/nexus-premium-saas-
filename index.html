@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus | Premium Web Solutions</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Nexus is a premium web agency delivering modern, responsive, and high-performance digital solutions tailored to your business needs.">
+    <meta name="keywords" content="web agency, digital solutions, premium web design, SaaS landing page, frontend development">
+    <meta name="author" content="Nexus Agency">
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.nexusagency.com/">
+
+    <!-- Open Graph Tags (Facebook/LinkedIn) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.nexusagency.com/">
+    <meta property="og:title" content="Nexus | Premium Web Solutions">
+    <meta property="og:description" content="Nexus is a premium web agency delivering modern, responsive, and high-performance digital solutions tailored to your business needs.">
+    <meta property="og:image" content="https://www.nexusagency.com/images/og-image.jpg">
+    <meta property="og:site_name" content="Nexus">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://www.nexusagency.com/">
+    <meta name="twitter:title" content="Nexus | Premium Web Solutions">
+    <meta name="twitter:description" content="Nexus is a premium web agency delivering modern, responsive, and high-performance digital solutions tailored to your business needs.">
+    <meta name="twitter:image" content="https://www.nexusagency.com/images/twitter-card.jpg">
+    <meta name="twitter:creator" content="@nexusagency">
+
+    <!-- Favicon Support -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+
+    <!-- Performance Enhancements (Preconnect) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"></noscript>
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="custom-cursor" id="custom-cursor"></div>
+
+    <!-- Premium Preloader -->
+    <div id="preloader" class="preloader">
+        <div class="preloader-content">
+            <span class="logo-text">Nexus.</span>
+            <div class="loader-line"></div>
+        </div>
+    </div>
+
+    <!-- Header / Navbar -->
+    <header class="header" id="header">
+        <div class="scroll-progress" id="scroll-progress"></div>
+        <div class="container">
+            <nav class="navbar" aria-label="Main Navigation">
+                <!-- Logo -->
+                <a href="#home" class="logo" aria-label="Go to homepage">
+                    <span class="logo-text">Nexus.</span>
+                </a>
+
+                <!-- Navigation Links (Center) -->
+                <ul class="nav-menu" id="nav-menu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link active" aria-current="page">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#features" class="nav-link">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#services" class="nav-link">Services</a>
+                    </li>
+                </ul>
+
+                <!-- Nav Actions -->
+                <div class="nav-actions">
+                    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                        <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                        <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                    </button>
+                    <a href="#contact" class="btn btn-primary d-none-mobile">Get Started</a>
+                    <!-- Hamburger Menu Toggle (Mobile) -->
+                    <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                        <span class="hamburger-line"></span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Sections for Demonstration -->
+    <main>
+        <section id="home" class="section hero-section">
+            <!-- Floating Gradient Blobs -->
+            <div class="hero-bg-blobs" aria-hidden="true">
+                <div class="blob blob-1"></div>
+                <div class="blob blob-2"></div>
+                <div class="blob blob-3"></div>
+            </div>
+
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span class="pulse-dot"></span> Nexus 2.0 is now live!
+                    </div>
+                    
+                    <h1 class="hero-title">Architecting the Digital <br> <span class="text-gradient">Future of SaaS</span></h1>
+                    <p class="hero-subtitle">We build premium, high-performance web applications that scale effortlessly. Elevate your brand with award-winning design and unparalleled engineering.</p>
+                    
+                    <div class="hero-ctas">
+                        <a href="#contact" class="btn btn-primary btn-lg">
+                            Get Started
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn-icon"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </a>
+                        <a href="#features" class="btn btn-outline btn-lg">
+                            Explore Features
+                        </a>
+                    </div>
+                    
+                    <!-- Trust Badges & Stats -->
+                    <div class="hero-trust">
+                        <p class="trust-title">Trusted by innovative teams worldwide</p>
+                        <div class="trust-logos">
+                            <div class="trust-logo">
+                                <svg viewBox="0 0 100 30" fill="currentColor"><path d="M10,20 h20 v-5 h-20 z"/></svg>
+                                <span>AcmeCorp</span>
+                            </div>
+                            <div class="trust-logo">
+                                <svg viewBox="0 0 100 30" fill="currentColor"><circle cx="15" cy="15" r="10"/></svg>
+                                <span>GlobalTech</span>
+                            </div>
+                            <div class="trust-logo">
+                                <svg viewBox="0 0 100 30" fill="currentColor"><polygon points="10,25 20,5 30,25"/></svg>
+                                <span>Zenith</span>
+                            </div>
+                            <div class="trust-logo">
+                                <svg viewBox="0 0 100 30" fill="currentColor"><rect x="5" y="10" width="20" height="10"/></svg>
+                                <span>Quantum</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <a href="#features" class="scroll-indicator" aria-label="Scroll down">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <div class="arrows">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </a>
+        </section>
+
+        <section id="features" class="section features-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Powerful Features</h2>
+                    <p>Everything you need to scale your business with confidence and ease.</p>
+                </div>
+                
+                <div class="features-grid">
+                    <!-- Feature Card 1 -->
+                    <article class="feature-card">
+                        <div class="feature-card-inner">
+                            <div class="feature-icon-wrapper">
+                                <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+                                </svg>
+                            </div>
+                            <h3 class="feature-title">Lightning Fast</h3>
+                            <p class="feature-description">Optimized for speed and performance, ensuring your application runs smoothly under any load.</p>
+                        </div>
+                    </article>
+
+                    <!-- Feature Card 2 -->
+                    <article class="feature-card">
+                        <div class="feature-card-inner">
+                            <div class="feature-icon-wrapper">
+                                <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+                                    <line x1="3" y1="9" x2="21" y2="9" />
+                                    <line x1="9" y1="21" x2="9" y2="9" />
+                                </svg>
+                            </div>
+                            <h3 class="feature-title">Intuitive Dashboard</h3>
+                            <p class="feature-description">A clean, user-friendly interface that puts powerful analytics and controls right at your fingertips.</p>
+                        </div>
+                    </article>
+
+                    <!-- Feature Card 3 -->
+                    <article class="feature-card">
+                        <div class="feature-card-inner">
+                            <div class="feature-icon-wrapper">
+                                <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                                </svg>
+                            </div>
+                            <h3 class="feature-title">Enterprise Security</h3>
+                            <p class="feature-description">Bank-grade encryption and advanced security protocols keep your data safe and compliant.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section about-section">
+            <div class="container">
+                <div class="about-grid">
+                    <!-- Image Side -->
+                    <div class="about-image-wrapper">
+                        <img src="images/about.jpg" alt="Nexus modern office" class="about-image" loading="lazy">
+                        <div class="about-glass-overlay">
+                            <div class="counter-box">
+                                <span class="counter-value" data-target="10">0</span><span class="counter-suffix">+</span>
+                                <span class="counter-label">Years of Innovation</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Content Side -->
+                    <div class="about-content">
+                        <div class="section-header align-left">
+                            <h2>About Nexus</h2>
+                            <p>Pioneering the future of digital experiences with cutting-edge solutions.                            <div class="testimonial-author">
+                                <img src="images/client-1.jpg" alt="Sarah Johnson" class="testimonial-img" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdib3g9IjAgMCAxMDAgMTAwIj48Y2lyY2xlIGN4PSI1MCIgY3k9IjUwIiByPSI1MCIgZmlsbD0iIzMzMyIvPjwvc3ZnPg=='">
+                                <div class="author-info">
+                                    <h4>Sarah Johnson</h4>
+                                    <p>CTO, TechFlow Inc.</p>
+                                </div>
+                            </div>
+                            <div class="testimonial-stars">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                            </div>
+                            <p class="testimonial-text">"Nexus completely transformed our digital presence. Their attention to detail and robust architecture helped us scale our platform seamlessly."</p>
+                        </div>
+                        
+                        <div class="testimonial-card">
+                            <div class="testimonial-author">
+                                <img src="images/client-2.jpg" alt="Michael Chen" class="testimonial-img" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdib3g9IjAgMCAxMDAgMTAwIj48Y2lyY2xlIGN4PSI1MCIgY3k9IjUwIiByPSI1MCIgZmlsbD0iIzMzMyIvPjwvc3ZnPg=='">
+                                <div class="author-info">
+                                    <h4>Michael Chen</h4>
+                                    <p>Founder, StartupX</p>
+                                </div>
+                            </div>
+                            <div class="testimonial-stars">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                            </div>
+                            <p class="testimonial-text">"The performance of our new application is simply unmatched. The Nexus team delivered far beyond our expectations."</p>
+                        </div>
+
+                        <div class="testimonial-card">
+                            <div class="testimonial-author">
+                                <img src="images/client-3.jpg" alt="Emma Thompson" class="testimonial-img" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdib3g9IjAgMCAxMDAgMTAwIj48Y2lyY2xlIGN4PSI1MCIgY3k9IjUwIiByPSI1MCIgZmlsbD0iIzMzMyIvPjwvc3ZnPg=='">
+                                <div class="author-info">
+                                    <h4>Emma Thompson</h4>
+                                    <p>Director, Global Retail</p>
+                                </div>
+                            </div>
+                            <div class="testimonial-stars">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                            </div>
+                            <p class="testimonial-text">"Working with Nexus was a breeze. They handled everything from UI/UX design to complex backend integrations flawlessly."</p>
+                        </div>d in 2016, Nexus began with a simple mission: to make enterprise-grade software accessible to everyone. Today, we empower thousands of businesses globally to scale efficiently through our intuitive and powerful platform.</p>
+                        </div>
+                        
+                        <div class="about-checklist">
+                            <ul class="feature-list">
+                                <li class="reveal-up">
+                                    <div class="check-icon-wrapper">
+                                        <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    </div>
+                                    <span>Award-winning premium design</span>
+                                </li>
+                                <li class="reveal-up" style="animation-delay: 0.1s">
+                                    <div class="check-icon-wrapper">
+                                        <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    </div>
+                                    <span>Robust and scalable architecture</span>
+                                </li>
+                                <li class="reveal-up" style="animation-delay: 0.2s">
+                                    <div class="check-icon-wrapper">
+                                        <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    </div>
+                                    <span>Dedicated 24/7 expert support</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="about-stats reveal-up" style="animation-delay: 0.3s">
+                            <div class="stat-item">
+                                <span class="stat-number counter-value" data-target="250">0</span><span class="stat-suffix">+</span>
+                                <span class="stat-text">Team Members</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number counter-value" data-target="50">0</span><span class="stat-suffix">K</span>
+                                <span class="stat-text">Global Users</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number counter-value" data-target="99">0</span><span class="stat-suffix">%</span>
+                                <span class="stat-text">Uptime guarantee</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="section services-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Our Services</h2>
+                    <p>Comprehensive solutions designed to elevate your brand and drive sustainable growth.</p>
+                </div>
+                
+                <div class="services-grid">
+                    <!-- Service Card 1 -->
+                    <article class="service-card">
+                        <div class="service-card-border"></div>
+                        <div class="service-card-inner">
+                            <div class="service-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                            </div>
+                            <h3>Web Development</h3>
+                            <p>Custom, responsive websites built with modern frameworks to ensure optimal performance and user experience.</p>
+                            <a href="#contact" class="btn btn-outline service-btn">Learn More <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn-icon"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+                        </div>
+                    </article>
+
+                    <!-- Service Card 2 -->
+                    <article class="service-card">
+                        <div class="service-card-border"></div>
+                        <div class="service-card-inner">
+                            <div class="service-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                            </div>
+                            <h3>E-Commerce</h3>
+                            <p>Scalable online stores engineered to maximize conversions, streamline checkout, and manage inventory.</p>
+                            <a href="#contact" class="btn btn-outline service-btn">Learn More <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn-icon"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+                        </div>
+                    </article>
+
+                    <!-- Service Card 3 -->
+                    <article class="service-card">
+                        <div class="service-card-border"></div>
+                        <div class="service-card-inner">
+                            <div class="service-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                            </div>
+                            <h3>Digital Marketing</h3>
+                            <p>Data-driven strategies including SEO, SEM, and social media campaigns to boost your online visibility.</p>
+                            <a href="#contact" class="btn btn-outline service-btn">Learn More <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn-icon"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+                        </div>
+                    </article>
+
+                    <!-- Service Card 4 -->
+                    <article class="service-card">
+                        <div class="service-card-border"></div>
+                        <div class="service-card-inner">
+                            <div class="service-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                            </div>
+                            <h3>Cybersecurity</h3>
+                            <p>Comprehensive security audits and implementations to protect your data and ensure compliance.</p>
+                            <a href="#contact" class="btn btn-outline service-btn">Learn More <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn-icon"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+                        </div>
+                    </article>
+
+                    <!-- Service Card 5 -->
+                    <article class="service-card">
+                        <div class="service-card-border"></div>
+                        <div class="service-card-inner">
+                            <div class="service-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                            </div>
+                            <h3>Cloud Hosting</h3>
+                            <p>Reliable and lightning-fast cloud infrastructure solutions tailored to your application's unique needs.</p>
+                            <a href="#contact" class="btn btn-outline service-btn">Learn More <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn-icon"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+                        </div>
+                    </article>
+
+                    <!-- Service Card 6 -->
+                    <article class="service-card">
+                        <div class="service-card-border"></div>
+                        <div class="service-card-inner">
+                            <div class="service-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                            </div>
+                            <h3>Consulting</h3>
+                            <p>Expert guidance to help you navigate digital transformation and optimize your technology stack.</p>
+                            <a href="#contact" class="btn btn-outline service-btn">Learn More <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn-icon"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        
+        <section id="why-us" class="section why-us-section">
+            <div class="container">
+                <div class="why-us-grid">
+                    <!-- Left Side: Image -->
+                    <div class="why-us-image-wrapper reveal-left">
+                        <img src="images/why-choose-us.jpg" alt="Abstract digital connections" class="why-us-image floating-illustration" loading="lazy">
+                        <div class="glass-badge floating-badge">
+                            <span class="badge-text">100% Satisfaction</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Right Side: Content -->
+                    <div class="why-us-content reveal-right">
+                        <div class="section-header align-left">
+                            <h2>Why Choose Us</h2>
+                            <p>We combine cutting-edge technology with unparalleled expertise to deliver results that matter.</p>
+                        </div>
+                        
+                        <div class="feature-blocks">
+                            <!-- Block 1 -->
+                            <div class="feature-block">
+                                <div class="check-icon-wrapper">
+                                    <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="feature-block-text">
+                                    <h4>Proven Track Record</h4>
+                                    <p>Over 500 successful projects delivered on time and within budget, ensuring maximum ROI.</p>
+                                </div>
+                            </div>
+
+                            <!-- Block 2 -->
+                            <div class="feature-block">
+                                <div class="check-icon-wrapper">
+                                    <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="feature-block-text">
+                                    <h4>Unmatched Expertise</h4>
+                                    <p>Our team consists of industry veterans and certified professionals who stay ahead of the curve.</p>
+                                </div>
+                            </div>
+
+                            <!-- Block 3 -->
+                            <div class="feature-block">
+                                <div class="check-icon-wrapper">
+                                    <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="feature-block-text">
+                                    <h4>24/7 Premium Support</h4>
+                                    <p>Round-the-clock dedicated support ensuring your business never experiences downtime.</p>
+                                </div>
+                            </div>
+
+                            <!-- Block 4 -->
+                            <div class="feature-block">
+                                <div class="check-icon-wrapper">
+                                    <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </div>
+                                <div class="feature-block-text">
+                                    <h4>Custom Tailored Solutions</h4>
+                                    <p>We don't do one-size-fits-all. Every strategy is uniquely designed for your specific goals.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section id="stats" class="section stats-section">
+            <div class="container">
+                <div class="stats-grid">
+                    <!-- Stat Card 1 -->
+                    <div class="stat-card">
+                        <div class="stat-card-inner">
+                            <div class="stat-icon-wrapper">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                            </div>
+                            <div class="stat-data">
+                                <span class="stat-number counter-value" data-target="500">0</span><span class="stat-suffix">+</span>
+                            </div>
+                            <span class="stat-label">Projects Delivered</span>
+                        </div>
+                    </div>
+
+                    <!-- Stat Card 2 -->
+                    <div class="stat-card">
+                        <div class="stat-card-inner">
+                            <div class="stat-icon-wrapper">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                            </div>
+                            <div class="stat-data">
+                                <span class="stat-number counter-value" data-target="350">0</span><span class="stat-suffix">+</span>
+                            </div>
+                            <span class="stat-label">Happy Clients</span>
+                        </div>
+                    </div>
+
+                    <!-- Stat Card 3 -->
+                    <div class="stat-card">
+                        <div class="stat-card-inner">
+                            <div class="stat-icon-wrapper">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                            </div>
+                            <div class="stat-data">
+                                <span class="stat-number counter-value" data-target="15">0</span><span class="stat-suffix">+</span>
+                            </div>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                    </div>
+
+                    <!-- Stat Card 4 -->
+                    <div class="stat-card">
+                        <div class="stat-card-inner">
+                            <div class="stat-icon-wrapper">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                            </div>
+                            <div class="stat-data">
+                                <span class="stat-number counter-value" data-target="28">0</span>
+                            </div>
+                            <span class="stat-label">Industry Awards</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="section testimonials-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>What Our Clients Say</h2>
+                    <p>Don't just take our word for it. Hear from the visionaries who trust us.</p>
+                </div>
+                
+                <div class="testimonial-slider-container">
+                    <div class="testimonial-track" id="testimonial-track">
+                        <!-- Slide 1 -->
+                        <div class="testimonial-slide">
+                            <div class="testimonial-card">
+                                <div class="quote-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                                </div>
+                                <p class="testimonial-text">"Nexus completely transformed our digital presence. Their attention to detail and ability to deliver complex solutions on time was absolutely phenomenal."</p>
+                                <div class="client-info">
+                                    <div class="client-avatar">SJ</div>
+                                    <div class="client-details">
+                                        <h4 class="client-name">Sarah Jenkins</h4>
+                                        <span class="client-role">CEO, TechNova</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div class="testimonial-slide">
+                            <div class="testimonial-card">
+                                <div class="quote-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                                </div>
+                                <p class="testimonial-text">"The dashboard they built for us is intuitive and blazing fast. We've seen a 40% increase in team productivity since we integrated their solution."</p>
+                                <div class="client-info">
+                                    <div class="client-avatar">MD</div>
+                                    <div class="client-details">
+                                        <h4 class="client-name">Marcus Davies</h4>
+                                        <span class="client-role">Operations Director, FlowSync</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 3 -->
+                        <div class="testimonial-slide">
+                            <div class="testimonial-card">
+                                <div class="quote-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
+                                </div>
+                                <p class="testimonial-text">"Security was our biggest concern, but Nexus delivered an enterprise-grade infrastructure that gave us complete peace of mind. Truly a premium service."</p>
+                                <div class="client-info">
+                                    <div class="client-avatar">AL</div>
+                                    <div class="client-details">
+                                        <h4 class="client-name">Amanda Lin</h4>
+                                        <span class="client-role">CTO, SecureVault</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slider Controls -->
+                    <div class="slider-controls">
+                        <button class="slider-btn prev-btn" id="slider-prev" aria-label="Previous Testimonial">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                        </button>
+                        
+                        <div class="slider-dots" id="slider-dots">
+                            <!-- Dots generated by JS -->
+                        </div>
+                        
+                        <button class="slider-btn next-btn" id="slider-next" aria-label="Next Testimonial">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="section faq-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Frequently Asked Questions</h2>
+                    <p>Everything you need to know about our services and how we work.</p>
+                </div>
+                
+                <div class="faq-container">
+                    <!-- FAQ 1 -->
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-1">
+                            <span class="faq-question-text">How long does a typical project take?</span>
+                            <span class="faq-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                            </span>
+                        </button>
+                        <div id="faq-1" class="faq-answer-wrapper" aria-hidden="true">
+                            <div class="faq-answer">
+                                <p>Project timelines vary depending on complexity and scope. A standard corporate website typically takes 4-6 weeks, while complex web applications can take 3-6 months. We always provide a detailed timeline during the discovery phase.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 2 -->
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-2">
+                            <span class="faq-question-text">Do you offer ongoing support after launch?</span>
+                            <span class="faq-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                            </span>
+                        </button>
+                        <div id="faq-2" class="faq-answer-wrapper" aria-hidden="true">
+                            <div class="faq-answer">
+                                <p>Absolutely. We offer various tiered maintenance and support packages to ensure your digital assets remain secure, up-to-date, and performant long after the initial launch.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 3 -->
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-3">
+                            <span class="faq-question-text">Will my website be mobile-friendly?</span>
+                            <span class="faq-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                            </span>
+                        </button>
+                        <div id="faq-3" class="faq-answer-wrapper" aria-hidden="true">
+                            <div class="faq-answer">
+                                <p>Yes, 100%. We employ a mobile-first design philosophy. Every interface we build is fully responsive and rigorously tested across all device types and screen sizes.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 4 -->
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-4">
+                            <span class="faq-question-text">What is your technology stack?</span>
+                            <span class="faq-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                            </span>
+                        </button>
+                        <div id="faq-4" class="faq-answer-wrapper" aria-hidden="true">
+                            <div class="faq-answer">
+                                <p>We select the best tools for the job. Our core stack often involves semantic HTML5, pure CSS3/SCSS, and Vanilla JavaScript for unparalleled performance. For complex apps, we utilize modern frameworks like React, Next.js, and Node.js.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Get in Touch</h2>
+                    <p>Ready to start your next big project? We would love to hear from you.</p>
+                </div>
+                
+                <div class="contact-grid">
+                    <!-- Left Side: Company Info & Map -->
+                    <div class="contact-info-wrapper">
+                        <div class="contact-info-card">
+                            <h3>Contact Information</h3>
+                            <p>Fill up the form and our team will get back to you within 24 hours.</p>
+                            
+                            <ul class="contact-details">
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                                    <span>+1 (555) 123-4567</span>
+                                </li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                                    <span>hello@nexusagency.com</span>
+                                </li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                                    <span>123 Innovation Drive, Tech City, CA 90210</span>
+                                </li>
+                            </ul>
+
+                            <div class="contact-socials">
+                                <h4>Follow Us</h4>
+                                <div class="social-links">
+                                    <a href="#" aria-label="LinkedIn" class="social-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+                                    <a href="#" aria-label="Twitter" class="social-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg></a>
+                                    <a href="#" aria-label="GitHub" class="social-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg></a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Map Placeholder -->
+                        <div class="map-placeholder">
+                            <div class="map-overlay">
+                                <span>Interactive Map Placeholder</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Side: Contact Form -->
+                    <div class="contact-form-wrapper">
+                        <form id="contact-form" class="contact-form" novalidate>
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" class="form-control" placeholder="John Doe" required>
+                                <span class="error-message">Please enter your full name.</span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" class="form-control" placeholder="john@example.com" required>
+                                <span class="error-message">Please enter a valid email address.</span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" class="form-control" placeholder="How can we help?" required>
+                                <span class="error-message">Please enter a subject.</span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" class="form-control" rows="5" placeholder="Tell us about your project..." required></textarea>
+                                <span class="error-message">Please enter your message.</span>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary w-100">
+                                Send Message
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:18px;height:18px;margin-left:8px;"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                            </button>
+                            
+                            <div id="form-success" class="form-success-message" aria-hidden="true">
+                                Thank you! Your message has been sent successfully.
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Premium Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Brand Info -->
+                <div class="footer-col brand-col">
+                    <a href="#home" class="logo">
+                        <span class="logo-text">Nexus.</span>
+                    </a>
+                    <p class="footer-desc">Architecting the future of SaaS platforms. We build incredibly fast, fully responsive, and highly secure web applications for modern teams.</p>
+                </div>
+                
+                <!-- Quick Links -->
+                <div class="footer-col">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Legal -->
+                <div class="footer-col">
+                    <h4 class="footer-title">Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Newsletter -->
+                <div class="footer-col newsletter-col">
+                    <h4 class="footer-title">Subscribe</h4>
+                    <p class="footer-desc">Get the latest news and tech updates delivered to your inbox.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Email Address" required class="form-control">
+                        <button type="submit" class="btn btn-primary" aria-label="Subscribe">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Nexus Agency. All rights reserved.</p>
+                <!-- Back to Top -->
+                <a href="#home" class="back-to-top" aria-label="Back to Top">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"></polyline></svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main Script (Deferred for Performance) -->
+    <script src="js/script.js" defer></script>
+</body>
+</html>
