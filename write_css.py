@@ -1,4 +1,6 @@
+import os
 
+css_content = """
 /* ==========================================================================
    Premium Aurora Glassmorphism CSS - Nexus 2.0
    ========================================================================== */
@@ -141,7 +143,13 @@ h1, h2, h3, h4, .logo-text { font-family: var(--font-heading); font-weight: 700;
 .nav-link:hover, .nav-link.active { color: #fff; text-shadow: 0 0 10px rgba(255,255,255,0.3); }
 .nav-actions { display: flex; align-items: center; gap: 1.5rem; }
 
-
+/* Aurora Background Blobs */
+.hero-bg-blobs { position: absolute; inset: 0; overflow: hidden; z-index: 0; pointer-events: none; }
+.blob { position: absolute; border-radius: 50%; filter: blur(100px); opacity: 0.5; animation: floatBlob 20s infinite alternate cubic-bezier(0.4, 0, 0.2, 1); }
+.blob-1 { top: -10%; left: -10%; width: 600px; height: 600px; background: var(--clr-primary); }
+.blob-2 { bottom: -20%; right: -10%; width: 500px; height: 500px; background: var(--clr-accent-1); animation-delay: -5s; animation-duration: 25s; }
+.blob-3 { top: 40%; left: 50%; width: 800px; height: 800px; background: var(--clr-accent-2); opacity: 0.3; transform: translate(-50%, -50%); animation-delay: -10s; }
+@keyframes floatBlob { 0% { transform: translate(0, 0) scale(1) rotate(0deg); } 100% { transform: translate(100px, 150px) scale(1.2) rotate(45deg); } }
 
 /* Hero */
 .hero-section { min-height: 100vh; display: flex; align-items: center; padding-top: var(--header-height); text-align: center; }
@@ -151,7 +159,7 @@ h1, h2, h3, h4, .logo-text { font-family: var(--font-heading); font-weight: 700;
     font-size: 0.9rem; font-weight: 500; display: inline-flex; align-items: center; gap: 0.5rem;
     backdrop-filter: blur(10px); box-shadow: 0 4px 20px rgba(0,0,0,0.2);
 }
-
+.pulse-dot { width: 8px; height: 8px; background: #10b981; border-radius: 50%; box-shadow: 0 0 15px #10b981; animation: pulse 2s infinite; }
 .hero-title { font-size: clamp(3rem, 6vw, 5.5rem); line-height: 1.1; letter-spacing: -0.03em; margin: 0; }
 .hero-subtitle { font-size: 1.25rem; max-width: 750px; margin: 0; color: #94a3b8; }
 .hero-ctas { display: flex; gap: 1rem; margin-top: 1rem; }
@@ -257,3 +265,9 @@ h1, h2, h3, h4, .logo-text { font-family: var(--font-heading); font-weight: 700;
 /* Footer & Utilities */
 .footer { background: #010008; padding: 4rem 0 2rem; border-top: 1px solid rgba(255,255,255,0.05); }
 .d-none { display: none !important; }
+"""
+
+with open('C:\\xampp\\htdocs\\IndustrialTrainingKit\\css\\style.css', 'w', encoding='utf-8') as f:
+    f.write(css_content)
+
+print("CSS updated successfully!")
