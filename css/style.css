@@ -4,26 +4,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
 
 :root {
-    /* Bright Aurora Colors */
-    --clr-bg: #f8fafc;
-    --clr-surface: rgba(255, 255, 255, 0.7);
+    /* Light Brown / Beige Theme */
+    --clr-bg: #f6efe1; 
+    --clr-surface: rgba(255, 255, 255, 0.55);
     
-    /* Vibrant Gradients */
-    --clr-primary: #4f46e5; /* Indigo */
-    --clr-primary-hover: #4338ca;
-    --clr-accent-1: #ec4899; /* Pink */
-    --clr-accent-2: #06b6d4; /* Cyan */
-    --clr-accent-3: #f59e0b; /* Amber */
+    /* Vibrant Earthy Colors for Text */
+    --clr-primary: #d97706; /* Vibrant Orange/Amber */
+    --clr-primary-hover: #b45309;
+    --clr-accent-1: #be123c; /* Crimson / Rose */
+    --clr-accent-2: #0f766e; /* Teal / Green */
+    --clr-accent-3: #854d0e; /* Golden Brown */
     
     /* Text */
-    --clr-text-main: #0f172a; /* Slate 900 */
-    --clr-text-muted: #475569; /* Slate 600 */
+    --clr-text-main: #432c1a; /* Deep Earthy Brown */
+    --clr-text-muted: #7a614e; /* Muted Brown */
     
     /* Borders & Glass */
-    --clr-border: rgba(15, 23, 42, 0.08);
-    --glass-bg: rgba(255, 255, 255, 0.85);
-    --glass-border: rgba(255, 255, 255, 0.4);
-    --glass-shadow: 0 20px 40px -10px rgba(0,0,0,0.05), 0 0 40px rgba(79, 70, 229, 0.1);
+    --clr-border: rgba(67, 44, 26, 0.08);
+    --glass-bg: rgba(246, 239, 225, 0.85);
+    --glass-border: rgba(255, 255, 255, 0.6);
+    --glass-shadow: 0 20px 40px -10px rgba(0,0,0,0.05), 0 0 40px rgba(217, 119, 6, 0.08);
     --glass-blur: blur(20px);
 
     /* Typography */
@@ -94,8 +94,9 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 
 /* Typography */
 h1, h2, h3, h4, .logo-text { font-family: var(--font-heading); font-weight: 700; color: var(--clr-text-main); }
-.section h2 { font-size: var(--fs-h2); margin-bottom: 1rem; }
+.section h2 { font-size: var(--fs-h2); margin-bottom: 1rem; color: var(--clr-primary); }
 .section p { font-size: var(--fs-lg); color: var(--clr-text-muted); max-width: 600px; margin: 0 auto 4rem; }
+.section h2 + p { color: var(--clr-accent-2); font-weight: 500; }
 .section-header { text-align: center; margin-bottom: 5rem; }
 .align-left { text-align: left; }
 .align-left p { margin-left: 0; }
