@@ -1,3 +1,5 @@
+import { animate, inView, stagger, spring } from "https://cdn.jsdelivr.net/npm/motion@11.11.13/+esm";
+
 /**
  * Main application script for the Premium Navbar
  * Features: Sticky header, mobile menu toggle, scroll spy for active links, and keyboard accessibility.
@@ -354,27 +356,65 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // ----------------------------------------------------------------------
-    // Scroll Reveal Animations
+    // Framer Motion (Motion One) Scroll Reveal Animations
     // ----------------------------------------------------------------------
-    const revealElements = document.querySelectorAll('.reveal-up, .reveal-left, .reveal-right, .reveal-zoom');
     
-    const revealObserverOptions = {
-        threshold: 0.1,
-        rootMargin: "0px 0px -50px 0px"
-    };
-
-    const revealObserver = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-                observer.unobserve(entry.target);
-            }
-        });
-    }, revealObserverOptions);
-
-    revealElements.forEach(el => {
-        revealObserver.observe(el);
+    // Feature Cards Stagger
+    inView('.features-grid', ({ target }) => {
+        animate(
+            target.querySelectorAll('.feature-card'),
+            { opacity: [0, 1], y: [50, 0] },
+            { delay: stagger(0.1), duration: 0.8, easing: [0.22, 1, 0.36, 1] }
+        );
     });
+
+    // Service Cards Stagger
+    inView('.services-grid', ({ target }) => {
+        animate(
+            target.querySelectorAll('.service-card'),
+            { opacity: [0, 1], y: [50, 0] },
+            { delay: stagger(0.1), duration: 0.8, easing: [0.22, 1, 0.36, 1] }
+        );
+    });
+
+    // Stat Cards Stagger
+    inView('.stats-grid', ({ target }) => {
+        animate(
+            target.querySelectorAll('.stat-card'),
+            { opacity: [0, 1], scale: [0.8, 1] },
+            { delay: stagger(0.1), duration: 0.6, easing: spring() }
+        );
+    });
+
+    // Testimonial Cards Stagger
+    inView('.testimonial-track', ({ target }) => {
+        animate(
+            target.querySelectorAll('.testimonial-card'),
+            { opacity: [0, 1], x: [50, 0] },
+            { delay: stagger(0.1), duration: 0.8, easing: [0.22, 1, 0.36, 1] }
+        );
+    });
+
+    // Reveal Up
+    inView('.reveal-up', ({ target }) => {
+        animate(target, { opacity: [0, 1], y: [40, 0] }, { duration: 0.8, easing: [0.22, 1, 0.36, 1] });
+    });
+
+    // Reveal Left
+    inView('.reveal-left', ({ target }) => {
+        animate(target, { opacity: [0, 1], x: [-50, 0] }, { duration: 0.8, easing: [0.22, 1, 0.36, 1] });
+    });
+
+    // Reveal Right
+    inView('.reveal-right', ({ target }) => {
+        animate(target, { opacity: [0, 1], x: [50, 0] }, { duration: 0.8, easing: [0.22, 1, 0.36, 1] });
+    });
+
+    // Hero Section Animation
+    animate('.hero-badge', { opacity: [0, 1], y: [-20, 0] }, { duration: 0.6, delay: 0.2 });
+    animate('.hero-title', { opacity: [0, 1], y: [30, 0] }, { duration: 0.8, delay: 0.4 });
+    animate('.hero-subtitle', { opacity: [0, 1], y: [30, 0] }, { duration: 0.8, delay: 0.6 });
+    animate('.hero-ctas', { opacity: [0, 1], y: [20, 0] }, { duration: 0.8, delay: 0.8 });
 
     // ----------------------------------------------------------------------
     // Contact Form Validation
